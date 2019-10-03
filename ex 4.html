@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Entrainement </title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+      <span id="hoho"> </span>
+      <button onclick="result()"> Affichez le nombre !</button>
+      <button onclick="ajout()"> Plus dix !</button>
+      <button onclick="divisez()"> Divisez !</button>
+      <button onclick="multipliez()"> Multipliez !</button>
+      <button onclick="Soustrayiez()"> Soustrayiez !</button>
+      <button onclick="surprise()"> Surprise... </button>
+      <input type="reset" value="Reset" /> </input>
+    <script>
+
+    var result;
+
+    function result() {
+    result = 0;
+    document.getElementById('hoho').innerHTML = result;
+  }
+    function ajout() {
+    //result += 10;
+    result = result +10;
+    document.getElementById('hoho').innerHTML = result;
+    }
+    function divisez() {
+      result /= 5;
+    document.getElementById('hoho').innerHTML = result;
+    }
+    function multipliez() {
+      result *= 8;
+    document.getElementById('hoho').innerHTML = result;
+    }
+    function Soustrayiez() {
+      result -= 2;
+    document.getElementById('hoho').innerHTML = result;
+    }
+    function surprise() {
+      result += 10 - 2;
+    document.getElementById('hoho').innerHTML = result;
+    }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Entrainement </title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+    <input id="input" placeholder="Entrez value in Kg" type="number"> => <span id=resulta>  </span></br>
+    <button onclick="kgpd()"> Convertir Kg en Pd</button> </br>
+    <input id="inputo" placeholder="Entrez value in Kg" type="number"> => <span id=resu>  </span> </br>
+    <button onclick="pdkg()"> Convertir Pd en Kg</button>
+
+    <script>
+    function kgpd() {
+    var valeur = document.getElementById('input').value;
+    var convers = valeur / 2.205;
+    document.getElementById('resulta').innerHTML = convers;
+
+    }
+    function pdkg() {
+    var go = document.getElementById('inputo').value;
+    var conv = go * 2.205;
+    document.getElementById('resu').innerHTML = conv;
+    }
+
+    </script>
+    </body>
+  </html>

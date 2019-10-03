@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Exercices</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      </head>
+  <body>
+    <section class = "box">
+      <p>  <input id="input_test" placeholder="Valeur" type="number"/>
+       - <input id="inputtest" placeholder="Valeur" type="number"/> =
+       <span id="res"> </span>
+         <button onclick='soustraire()'>Soustrayez</button> <br>
+
+           </p>
+            </section>
+
+
+            <script type="text/javascript">
+            alert('C est l heure de la soustraction!');
+              function soustraire(){
+                var input1 = document.getElementById('input_test').value;
+                var input2 = document.getElementById('inputtest').value;
+                var resulta = input1 - input2;
+                document.getElementById('res').innerHTML = resulta;
+              }
+              </script>
+  </body>
+</hmtl>

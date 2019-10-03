@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Exercices</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      </head> 
+        <body>
+            
+         <p>   <input id="benefice" placeholder="tapper un nombre" type="number"> </input> 
+            <button onclick='benefic()'> Clic! </button> </br>
+            <button onclick='re()'> regénérer</button> Cote :  <span id="alea">  </span>
+         </br> Benefice :  <span id="benef">  </span>
+          
+         </p>
+         <script>
+
+            var cote;
+
+             function benefic(){
+              var benef = document.getElementById('benefice').value;
+              var calcul = benef * cote;
+              document.getElementById('benef').innerHTML = calcul;
+             }
+             
+             function re(){
+                cote = Math.random() * (10 - 1) + 1;
+                cote = cote.toFixed (2);
+              document.getElementById('alea').innerHTML = cote;   
+             }
+
+             re();
+         
+         </script>
+        </body>
+    </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Entrainement </title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+      <span id="apparait"> Ma phrase : </span>
+      <input id="ca" placeholder="Entrer vos mots" text="" >
+      <button onclick="f()"> Ajoutez vos mots </button>
+      <button onclick="f()" type='reset'> Reset </button> </br>
+
+
+        <script>
+          function f() {
+            var sentence = document.getElementById('ca').value;
+            document.getElementById('apparait').innerHTML = sentence;
+          }
+        </script>
+    </body>
+  </html>
